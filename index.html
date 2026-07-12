@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANSTORE | Tribal Fashion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>FREE SHIPPING ON ORDERS OVER ₹999 | USE CODE: TRIBE20 FOR 20% OFF</p>
+    </div>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-logo">VANSTORE</div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-left">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#collections" class="nav-link">Collections</a>
+            </nav>
+            
+            <a href="#home" class="logo">VANSTORE</a>
+            
+            <nav class="nav-right">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-icons">
+                <button class="icon-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="icon-btn" id="wishlistBtn">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge" id="wishlistCount">0</span>
+                </button>
+                <button class="icon-btn" id="cartBtn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+                <button class="icon-btn" id="userBtn">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="logo">VANSTORE</span>
+            <button class="close-menu-btn" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#shop" class="mobile-nav-link">Shop</a>
+            <a href="#collections" class="mobile-nav-link">Collections</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-tribal-decor">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="250,50 350,150 300,250 200,250 150,150" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <polygon points="250,150 300,200 280,280 220,280 200,200" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+                <circle cx="250" cy="400" r="80" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+                <circle cx="250" cy="400" r="50" fill="none" stroke="#c9a227" stroke-width="1"/>
+                <circle cx="250" cy="400" r="25" fill="none" stroke="#c9a227" stroke-width="0.8"/>
+                <line x1="80" y1="100" x2="420" y2="100" stroke="#c9a227" stroke-width="1" opacity="0.5"/>
+                <line x1="50" y1="200" x2="450" y2="200" stroke="#c9a227" stroke-width="0.5" opacity="0.3"/>
+                <line x1="100" y1="300" x2="400" y2="300" stroke="#c9a227" stroke-width="0.5" opacity="0.3"/>
+            </svg>
+        </div>
+        <div class="hero-dots">
+            <div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div>
+            <div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div>
+            <div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div>
+            <div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div>
+            <div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div><div class="hero-dot"></div>
+        </div>
+        <div class="hero-line-decor"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">TRIBAL COLLECTION 2026</span>
+            <h1 class="hero-title">Own Your<br><span>Tribe</span></h1>
+            <p class="hero-text">Bold fashion rooted in heritage. Premium tribal streetwear for the modern warrior.</p>
+            <div class="hero-mantra">🔥 ROOTS · RISE · REBEL 🔥</div>
+            <div class="hero-buttons">
+                <a href="#shop" class="btn btn-primary">Shop Now</a>
+                <a href="#collections" class="btn btn-secondary">View Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bar -->
+    <section class="features-bar reveal">
+        <div class="feature">
+            <i class="fas fa-truck"></i>
+            <div>
+                <h4>Free Shipping</h4>
+                <p>On orders over $99</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fas fa-undo"></i>
+            <div>
+                <h4>Easy Returns</h4>
+                <p>30 day return policy</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+                <h4>Secure Payment</h4>
+                <p>100% secure checkout</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fas fa-headset"></i>
+            <div>
+                <h4>24/7 Support</h4>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section reveal" id="shop">
+        <div class="section-header">
+            <span class="section-subtitle">TRENDING NOW</span>
+            <h2 class="section-title">Shop Our Best Picks</h2>
+        </div>
+        
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All</button>
+            <button class="filter-tab" data-filter="shirts">Shirts</button>
+            <button class="filter-tab" data-filter="tshirts">T-Shirts</button>
+            <button class="filter-tab" data-filter="pants">Pants</button>
+            <button class="filter-tab" data-filter="jackets">Jackets</button>
+            <button class="filter-tab" data-filter="accessories">Accessories</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be loaded via JavaScript -->
+        </div>
+        
+        <div class="load-more">
+            <button class="btn btn-outline" id="loadMoreBtn">Load More</button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section reveal" id="collections">
+        <div class="section-header">
+            <span class="section-subtitle">CATEGORIES</span>
+            <h2 class="section-title">Shop By Category</h2>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card" data-category="shirts">
+                <div class="category-img" style="background: linear-gradient(135deg, #1a1a2e, #16213e);"></div>
+                <div class="category-info">
+                    <h3>Shirts</h3>
+                    <p>42 Products</p>
+                    <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="category-card" data-category="tshirts">
+                <div class="category-img" style="background: linear-gradient(135deg, #0f3460, #533483);"></div>
+                <div class="category-info">
+                    <h3>T-Shirts</h3>
+                    <p>38 Products</p>
+                    <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="category-card" data-category="pants">
+                <div class="category-img" style="background: linear-gradient(135deg, #2d132c, #801336);"></div>
+                <div class="category-info">
+                    <h3>Pants</h3>
+                    <p>29 Products</p>
+                    <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="category-card" data-category="jackets">
+                <div class="category-img" style="background: linear-gradient(135deg, #1b1b2f, #162447);"></div>
+                <div class="category-info">
+                    <h3>Jackets</h3>
+                    <p>24 Products</p>
+                    <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-section reveal">
+        <div class="promo-content">
+            <span class="promo-badge">TRIBAL EXCLUSIVE</span>
+            <h2 class="promo-title">Warrior Within<br>Up to <span>50% Off</span></h2>
+            <p class="promo-text">Gear up with our biggest drop of the season. Premium tribal wear at warrior prices.</p>
+            <a href="#shop" class="btn btn-primary">Claim Your Gear</a>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="featured-section reveal" id="featured">
+        <div class="section-header">
+            <span class="section-subtitle">CURATED TRIBES</span>
+            <h2 class="section-title">Featured Collections</h2>
+        </div>
+        <div class="featured-grid">
+            <div class="featured-card large">
+                <div class="featured-img" style="background: linear-gradient(135deg, #1a1a2e, #e94560);"></div>
+                <div class="featured-info">
+                    <span class="featured-tag">NEW DROP</span>
+                    <h3>Warrior Pack</h3>
+                    <p>Starting from ₹399</p>
+                    <a href="#" class="btn btn-white">Explore</a>
+                </div>
+            </div>
+            <div class="featured-card">
+                <div class="featured-img" style="background: linear-gradient(135deg, #0f3460, #533483);"></div>
+                <div class="featured-info">
+                    <span class="featured-tag">BESTSELLER</span>
+                    <h3>Nomad Series</h3>
+                    <p>Starting from ₹299</p>
+                    <a href="#" class="btn btn-white">Explore</a>
+                </div>
+            </div>
+            <div class="featured-card">
+                <div class="featured-img" style="background: linear-gradient(135deg, #162447, #1f4068);"></div>
+                <div class="featured-info">
+                    <span class="featured-tag">PREMIUM</span>
+                    <h3>Ancestral Line</h3>
+                    <p>Starting from ₹299</p>
+                    <a href="#" class="btn btn-white">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section reveal" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="about-img-placeholder">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-subtitle">OUR STORY</span>
+                <h2 class="section-title">About Vanstore</h2>
+                <p>Vanstore was born from the fusion of ancient tribal heritage and modern street culture. Every piece in our collection tells a story — of warriors, nomads, and tribes who defined style before it had a name.</p>
+                <p>We partner with indigenous artisans to bring authentic patterns, handwoven textures, and bold symbolism into contemporary fashion. This isn't just clothing — it's a movement.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Products</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                </div>
+                <a href="#shop" class="btn btn-primary">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section reveal" id="contact">
+        <div class="newsletter-content">
+            <h2>Join the Tribe</h2>
+            <p>Subscribe for exclusive drops, tribal stories, and warrior discounts.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-section reveal">
+        <div class="section-header">
+            <span class="section-subtitle">@VANSTORE</span>
+            <h2 class="section-title">Follow Us on Instagram</h2>
+        </div>
+        <div class="instagram-grid">
+            <div class="insta-item"><div class="insta-img" style="background: linear-gradient(135deg, #667eea, #764ba2);"><i class="fab fa-instagram"></i></div></div>
+            <div class="insta-item"><div class="insta-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);"><i class="fab fa-instagram"></i></div></div>
+            <div class="insta-item"><div class="insta-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"><i class="fab fa-instagram"></i></div></div>
+            <div class="insta-item"><div class="insta-img" style="background: linear-gradient(135deg, #43e97b, #38f9d7);"><i class="fab fa-instagram"></i></div></div>
+            <div class="insta-item"><div class="insta-img" style="background: linear-gradient(135deg, #fa709a, #fee140);"><i class="fab fa-instagram"></i></div></div>
+            <div class="insta-item"><div class="insta-img" style="background: linear-gradient(135deg, #a8edea, #fed6e3);"><i class="fab fa-instagram"></i></div></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <span class="logo">VANSTORE</span>
+                <p>Premium tribal fashion for the modern warrior. Heritage, culture, and style in every piece.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, NY 10001</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> hello@vanstore.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vanstore. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal" id="searchModal">
+        <div class="modal-content search-modal">
+            <button class="modal-close" id="closeSearchModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Search Products</h3>
+            <div class="search-box">
+                <input type="text" placeholder="Search for products..." id="searchInput">
+                <button class="search-submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-suggestions">
+                <p>Popular Searches:</p>
+                <div class="suggestion-tags">
+                    <span class="tag">Shirts</span>
+                    <span class="tag">T-Shirts</span>
+                    <span class="tag">Jeans</span>
+                    <span class="tag">Jackets</span>
+                    <span class="tag">Accessories</span>
+                </div>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content quickview-modal">
+            <button class="modal-close" id="closeQuickView">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="quickview-container">
+                <div class="quickview-image" id="quickViewImage"></div>
+                <div class="quickview-info">
+                    <span class="quickview-category" id="quickViewCategory"></span>
+                    <h2 id="quickViewName"></h2>
+                    <div class="quickview-price">
+                        <span class="current-price" id="quickViewPrice"></span>
+                        <span class="original-price" id="quickViewOriginalPrice"></span>
+                    </div>
+                    <p class="quickview-desc" id="quickViewDesc"></p>
+                    <div class="quickview-stock">
+                        <span id="quickViewStock" class="stock-status"></span>
+                    </div>
+                    <div class="size-selector">
+                        <p>Select Size: <a href="#" id="quickViewSizeGuide" class="size-guide-link">Size Guide</a></p>
+                        <div class="sizes">
+                            <button class="size-btn">S</button>
+                            <button class="size-btn active">M</button>
+                            <button class="size-btn">L</button>
+                            <button class="size-btn">XL</button>
+                        </div>
+                    </div>
+                    <div class="color-selector">
+                        <p>Select Color:</p>
+                        <div class="colors">
+                            <button class="color-btn" style="background: #1a1a2e;"></button>
+                            <button class="color-btn active" style="background: #e94560;"></button>
+                            <button class="color-btn" style="background: #0f3460;"></button>
+                        </div>
+                    </div>
+                    <div class="quickview-actions">
+                        <button class="btn btn-primary btn-add-to-cart" id="quickViewAddToCart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-outline btn-wishlist" id="quickViewWishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart (<span id="cartItemCount">0</span>)</h3>
+            <button class="close-cart-btn" id="closeCartBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your cart is empty</p>
+                <a href="#shop" class="btn btn-primary">Start Shopping</a>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0.00</span>
+            </div>
+            <div class="cart-shipping">
+                <span>Shipping</span>
+                <span>Free</span>
+            </div>
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">Proceed to Checkout</button>
+            <a href="#shop" class="btn btn-outline btn-full">Continue Shopping</a>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content checkout-modal">
+            <button class="modal-close" id="closeCheckout">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="checkout-header">
+                <h2>Checkout</h2>
+                <p>Complete your order</p>
+            </div>
+            <div class="checkout-order-summary" id="checkoutSummary">
+                <h3>Order Summary</h3>
+                <div id="checkoutItems"></div>
+                <div class="checkout-total-line">
+                    <span>Total</span>
+                    <span id="checkoutTotal">₹0</span>
+                </div>
+            </div>
+            <div class="checkout-payment">
+                <h3>Payment Method</h3>
+                <div class="payment-options">
+                    <label class="payment-option active" data-method="upi">
+                        <input type="radio" name="payment" value="upi" checked>
+                        <div class="payment-option-content">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <strong>UPI</strong>
+                                <span>Google Pay, PhonePe, Paytm</span>
+                            </div>
+                            <div class="payment-apps">
+                                <i class="fab fa-google-pay"></i>
+                                <span class="pay-icon pp">PP</span>
+                                <span class="pay-icon pt">P</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="payment-option" data-method="card">
+                        <input type="radio" name="payment" value="card">
+                        <div class="payment-option-content">
+                            <i class="fas fa-credit-card"></i>
+                            <div>
+                                <strong>Credit / Debit Card</strong>
+                                <span>Visa, Mastercard, RuPay</span>
+                            </div>
+                            <div class="payment-apps">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <span class="pay-icon rp">R</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="payment-option" data-method="cod">
+                        <input type="radio" name="payment" value="cod">
+                        <div class="payment-option-content">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <div>
+                                <strong>Cash on Delivery</strong>
+                                <span>Pay when you receive</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="payment-form" id="upiForm">
+                    <p>Enter your UPI ID to receive payment request:</p>
+                    <div class="payment-input-group">
+                        <input type="text" placeholder="example@upi" id="upiInput">
+                        <button class="btn btn-primary" id="payBtn">Pay <span id="payAmount">₹0</span></button>
+                    </div>
+                    <div class="upi-apps">
+                        <span class="upi-app"><i class="fas fa-mobile-alt"></i> Google Pay</span>
+                        <span class="upi-app"><i class="fas fa-mobile-alt"></i> PhonePe</span>
+                        <span class="upi-app"><i class="fas fa-mobile-alt"></i> Paytm</span>
+                        <span class="upi-app"><i class="fas fa-mobile-alt"></i> BHIM</span>
+                    </div>
+                </div>
+                <div class="payment-form" id="cardForm" style="display:none;">
+                    <div class="payment-input-group">
+                        <input type="text" placeholder="Card Number" maxlength="19">
+                    </div>
+                    <div class="payment-row">
+                        <div class="payment-input-group">
+                            <input type="text" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="payment-input-group">
+                            <input type="text" placeholder="CVV" maxlength="4">
+                        </div>
+                    </div>
+                    <div class="payment-input-group">
+                        <input type="text" placeholder="Cardholder Name">
+                    </div>
+                    <button class="btn btn-primary btn-full" id="payCardBtn">Pay <span id="payCardAmount">₹0</span></button>
+                </div>
+                <div class="payment-form" id="codForm" style="display:none;">
+                    <div class="cod-info">
+                        <i class="fas fa-truck"></i>
+                        <p>Pay when your order arrives. No extra charges.</p>
+                    </div>
+                    <button class="btn btn-primary btn-full" id="placeOrderBtn">Place Order</button>
+                </div>
+            </div>
+            <div class="checkout-secure">
+                <i class="fas fa-lock"></i> Secured with 256-bit encryption
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">✓</div>
+            <h2>Order Placed!</h2>
+            <p>Your order has been placed successfully. You'll receive a confirmation shortly.</p>
+            <div class="success-details">
+                <div>
+                    <span>Order ID</span>
+                    <strong id="orderId">VAN-20260711-XXXX</strong>
+                </div>
+                <div>
+                    <span>Payment</span>
+                    <strong id="orderPayment">UPI</strong>
+                </div>
+                <div>
+                    <span>Total</span>
+                    <strong id="orderTotal">₹0</strong>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-full" id="continueShopBtn">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Item added to cart!</span>
+    </div>
+
+    <!-- Admin Panel -->
+    <div class="admin-overlay" id="adminOverlay"></div>
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-header">
+            <div>
+                <h2><i class="fas fa-crown"></i> Admin Panel</h2>
+                <p>Upload your product images from Instagram</p>
+            </div>
+            <button class="admin-close" id="closeAdminPanel"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="admin-products" id="adminProducts">
+            <!-- Loaded from JS -->
+        </div>
+        <div class="admin-footer">
+            <p>Images are stored in your browser. Export your data before clearing cache.</p>
+            <button class="btn btn-primary" id="exportAdminBtn"><i class="fas fa-download"></i> Export Images</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
