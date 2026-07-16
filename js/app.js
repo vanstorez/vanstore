@@ -230,6 +230,20 @@ const products = [
         inventory: 50,
         sizes: ["S", "M", "L", "XL"],
         description: "Minimalist timepiece with moon phase dial. Ancient wisdom, modern craft."
+    },
+    {
+        id: 17,
+        name: "Van Store Aadivasi Warli Art",
+        category: "tshirts",
+        price: 299,
+        originalPrice: null,
+        badge: "new",
+        color: "linear-gradient(135deg, #8b4513 0%, #cd853f 100%)",
+        icon: "fa-tshirt",
+        image: null,
+        inventory: 50,
+        sizes: ["S", "M", "L", "XL"],
+        description: "Authentic Warli art design. Heritage craftsmanship meets modern streetwear."
     }
 ];
 
