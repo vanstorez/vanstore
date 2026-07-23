@@ -17,6 +17,20 @@ const products = [
         inventory: 50,
         sizes: ["S", "M", "L", "XL"],
         description: "Official Vanstore merchandise. Premium quality at an unbeatable price."
+    },
+    {
+        id: 2,
+        name: "Van Store Official Merch",
+        category: "tshirts",
+        price: 249,
+        originalPrice: 499,
+        badge: "sale",
+        color: "linear-gradient(135deg, #0f3460 0%, #533483 100%)",
+        icon: "fa-tshirt",
+        image: null,
+        inventory: 50,
+        sizes: ["S", "M", "L", "XL"],
+        description: "Official Vanstore merchandise. Premium quality at an unbeatable price."
     }
 ];
 
