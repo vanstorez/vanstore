@@ -4,6 +4,20 @@
 // Set image: null to show a colored gradient placeholder.
 
 const products = [
+    {
+        id: 1,
+        name: "Van Store Official Merch",
+        category: "tshirts",
+        price: 249,
+        originalPrice: 499,
+        badge: "sale",
+        color: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
+        icon: "fa-tshirt",
+        image: null,
+        inventory: 50,
+        sizes: ["S", "M", "L", "XL"],
+        description: "Official Vanstore merchandise. Premium quality at an unbeatable price."
+    }
 ];
 
 // State
